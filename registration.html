@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  CSS  -->
+    <link rel="stylesheet" href="styles/nysl.css">
+    <!-- FUENTE PRINCIPAL -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Registration - NYSL</title>
+</head>
+
+<body>
+    <header>
+        <img class="tittle" src="./img/tittle.png" alt="Titulo">
+        <img class="img-logo" src="./img/nysl_logo.png" alt="Logo">
+    </header>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <img class="sub-logo" src="./img/sublogo.png" alt="Sub-Logo">
+        <div class="sub-tittle">
+            <h2>Registration Form</h2>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="game_info.html">Schedule</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <label class="icon-nav" for="nav-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <main class="main main-form ">
+        <form action="./show_data.html" method="GET" class="form mx-width-90 mx-width-60">
+            <fieldset class="fd column">
+                <legend>Player´s info</legend>
+                <div class="input-1y2 margin-bot0 ">
+                    <input class="input-text" type="text" name="name" placeholder="First Name" required>
+                    <input class="input-text" type="text" name="lastname" placeholder="Last Name" required>
+                </div>
+                <input class="input-text address" type="text" name="address" placeholder="Street Address" required>
+                <div class="input-4y5 margin-top0">
+                    <input class="input-text" type="text" name="city" placeholder="City" required>
+                    <input class="input-text" type="number" name="zipcode" placeholder="Zip Code" required>
+                </div>
+                <div class="flex birth-gender">
+                    <label>
+                        Birth Date:
+                        <input type="date" required>
+                    </label>
+                    <div class="gender">
+                        <h4 class="gender-tittle">Gender:</h4>
+                        <label>
+                            Female <input type="radio" name="gender" id="female" value="female" required>
+                        </label>
+                        <label>
+                            Male <input type="radio" name="gender" id="male" value="male" required>
+                        </label>
+                    </div>
+                </div>
+                <label>
+                    Grade:
+                    <select name="grade" id="grade" required>
+                        <option disabled value="" selected>Select grade</option>
+                        <option value="pre-school">Pre-School</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                    </select>
+                </label>
+                <h4 class="margin-bot0">Which elementary school do you live near?</h4>
+                <div class="margin-top0">
+                    <label>
+                        Closest School:
+                        <select name="school" id="school" required>
+                            <option disabled value="" selected>Select your school</option>
+                            <option value="aj-katze">AJ Katzenmaier</option>
+                            <option value="greenbay">Greenbay</option>
+                            <option value="howard">Howard A Yeager</option>
+                            <option value="marjorie">Marjorie P Hart</option>
+                            <option value="north">North Elementary</option>
+                            <option value="south">South Elementary</option>
+                        </select>
+                    </label>
+                </div>
+                <h4 class="margin-bot0">What position(s) do you normally play? (check all that apply)</h4>
+                <div class="d-flex position margin-top0">
+                    <label>
+                        <input type="checkbox" name="position" value="forward"><span> Forward</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="position" value="midfield"><span> Midfield</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="position" value="defense"><span> Defense</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="position" value="goalkeeper"><span> Goalkeeper</span>
+                    </label>
+                </div>
+                <div class="uniform ">
+                    <h4 class="uniform">Uniform Size:</h4>
+                    <label>
+                        <select name="uniform-size" id="uniform-size" required>
+                            <option disabled value="" selected>Select size</option>
+                            <option value="y-small">Youth Small</option>
+                            <option value="y-medium">Youth Medium</option>
+                            <option value="y-large">Youth Large</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="e-large">Extra-Large</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="permission">
+                    <h4>Permission to Play</h4>
+                    <p>
+                        I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by
+                        all
+                        the
+                        rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical
+                        injury
+                        associated with soccer and in consideration for the “League” accepting the registrant for its
+                        soccer
+                        programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                        employees
+                        and associated personnel and volunteers,including the facilities used for practices and games,
+                        against
+                        any claim by or on behalf of the registrant as a result of the registrant’s participation in the
+                        programand/orbeing transported to or from NYSL sponsored activities,which transportation
+                    </p>
+                    <p>
+                        By signing below, I herebyagree andauthorizethe above.In addition, by signing below, Ialso
+                        acknowledge
+                        that I have read the cancellation policy and agree to its terms.
+                    </p>
+                    <div class="form-signature">
+                        <label>
+                            Parent/GuardianSignature:
+                            <input class="input-signature" type="text" name="name-signature" required>
+                        </label>
+                        <label>
+                            Date:
+                            <input class="input-signature" type="text" name="date-signature" required>
+                        </label>
+                    </div>
+                </div>
+                <button class="button-form" type="submit">Send</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2021 - Lucas Cabezas</p>
+    </footer>
+</body>
+
+</html>
